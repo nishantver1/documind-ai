@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+}
+
+/* layout */
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+/* sidebar */
+.sidebar {
+  width: 260px;
+  background: #15181e;
+  padding: 20px;
+  border-right: 1px solid #1e293b;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar input {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.sidebar button {
+  width: 100%;
+  padding: 10px;
+  background: #15173D;
+  border: solid #2e61b1;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.tips {
+  margin-top: 30px;
+  opacity: 0.7;
+}
+
+.tips small {
+  display: block;
+  margin-top: 5px;
+}
+
+/* chat area */
+.chatSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatHeader {
+  padding: 15px;
+  border-bottom: 1px solid #2e61b1;
+  font-size: 18px;
+  background: #15181e;
+}
+
+.chatBox {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.user {
+  text-align: right;
+  background: #15181e;
+  padding: 12px;
+  border-radius: 10px;
+  margin: 10px;
+  max-width: 60%;
+  margin-left: auto;
+}
+
+.bot {
+  text-align: left;
+  background: #15181e;
+  padding: 12px;
+  border-radius: 10px;
+  margin: 10px;
+  max-width: 60%;
+}
+
+/* input */
+.inputArea {
+  display: flex;
+  padding: 15px;
+  border-top: 1px solid #1e293b;
+  background: #15181e;
+  width: 1000px;
+}
+
+.inputArea input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.inputArea button {
+  margin-left: 10px;
+  padding: 12px 20px;
+  background: #15173D;
+  border: solid #2e61b1;
+
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+.inputArea button:hover{
+  background: #2e61b1;
+}
+.rightbar {
+  width: 260px;
+  background: #0b0f14;
+  border-left: 1px solid #1f2937;
+  padding: 20px;
+}
+
+.rightbar h3 {
+  margin-bottom: 15px;
+  color: #58a6ff;
+}
+
+.card {
+  background: #161b22;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #30363d;
+}
+
+.card small {
+  opacity: 0.7;
+}
+
+/* scroll style */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #30363d;
+  border-radius: 10px;
+}
